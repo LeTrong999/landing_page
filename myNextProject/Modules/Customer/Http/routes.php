@@ -4,5 +4,5 @@ Route::group(['middleware' => 'web', 'prefix' => 'customer', 'namespace' => 'Mod
 {
     Route::get('/', 'CustomerController@index');
 
-    
+    Route::get('/admin', 'CustomerController@create');
 });
