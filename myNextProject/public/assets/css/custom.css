@@ -116,6 +116,27 @@ body{
   height: auto;
   border: 1px solid #cecbcb;
   overflow: hidden;
+  position: relative;
+}
+.content-first .content-body .content-box .buy_product{
+    border-top: 1px solid #ccc;
+    height: 50px;
+    position: absolute;
+    width: 100%;
+    line-height: 50px;
+    bottom: 0px;
+    background: white;
+    padding: 0px 10px;
+}
+.content-first .content-body .content-box .buy_product span.title_buy{
+    border-top: 1px solid #ccc;
+    height: 30px;
+    background: #e60909;
+    padding: 0px 10px;
+    line-height: 30px;
+    margin-top: 10px;
+    border-radius: 2px;
+    color: white;
 }
 .content-first .content-body .content-box img{
   width: 200px;

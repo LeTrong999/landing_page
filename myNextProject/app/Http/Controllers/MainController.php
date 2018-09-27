@@ -7,6 +7,7 @@ use DB;
 
 class MainController extends Controller
 {
+    protected $_data;
     /**
      * Display a listing of the resource.
      * @return Response
@@ -15,22 +16,27 @@ class MainController extends Controller
     {
 
     	//thay số 1 = id của bảng users
+        $data_user = DB::table('users')->where('link',$link)->select('id')->first();
+        $user_id = $data_user->id;
+
+
     	$data = DB::table('cates')
     					->join('products', 'cates.id', '=', 'products.cate_id')
     					->orderBy('cates.id')
-    					->where('cates.user_id','1')
-    					->select('cates.id as cate_id','cates.name as name_cate','products.name as name_product')
+    					->where('cates.user_id',$user_id)
+    					->select('cates.id as cate_id','cates.name as name_cate','products.name as name_product','products.*')
     					->get()
     					->toArray();
+
+
     	$result = array();
 		foreach ($data as $item) {
 			$result[$item->cate_id][] = $item;
 		}
-		echo "<pre>";
-    	print_r($result);die;
-    	//$grouped = array_group_by( $data,"cate_id" );
-    	// echo "<pre>";
-    	// print_r($result[]);
+		$this->_data['result'] = $result;
+
+    	        
+         return view('page/buy-sell',$this->_data);
     }
 
     /**
