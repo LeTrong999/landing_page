@@ -34,9 +34,8 @@ class MainController extends Controller
 			$result[$item->cate_id][] = $item;
 		}
 		$this->_data['result'] = $result;
-
     	        
-         return view('page/buy-sell',$this->_data);
+        return view('page/buy-sell',$this->_data);
     }
 
     /**

@@ -1,66 +1,69 @@
 jQuery(document).ready(function($) {
-  $('.slide_first .lt_left').click(function(event){
+  $('.lt_left').click(function(event){
   	event.preventDefault();
   	var flag = $(this);
+    var flag_slide = flag.parent().attr('flag_id');
+    console.log(flag_slide);
   	flag.css('pointer-events', 'none');
   	setTimeout(function () {
         flag.css('pointer-events', 'unset');
     }, 300);
-  	slide_right('slide_first');
+  	slide_right(flag_slide);
   });
 
-  $('.slide_first .lt_right').click(function(event){
+  $('.lt_right').click(function(event){
   	event.preventDefault();
   	var flag = $(this);
+    var flag_slide = flag.parent().attr('flag_id');
+    console.log(flag_slide);
   	flag.css('pointer-events', 'none');
-
   	setTimeout(function () {
         flag.css('pointer-events', 'unset');
     }, 300);
-  	slide_left('slide_first');
+  	slide_left(flag_slide);
   });
  /*=============================================================*/
-  $('.slide_two .lt_left').click(function(event){
-  	event.preventDefault();
-  	var flag = $(this);
-  	flag.css('pointer-events', 'none');
-  	setTimeout(function () {
-        flag.css('pointer-events', 'unset');
-    }, 300);
-  	slide_right('slide_two');
-  });
+  // $('.slide_two .lt_left').click(function(event){
+  // 	event.preventDefault();
+  // 	var flag = $(this);
+  // 	flag.css('pointer-events', 'none');
+  // 	setTimeout(function () {
+  //       flag.css('pointer-events', 'unset');
+  //   }, 300);
+  // 	slide_right('slide_two');
+  // });
 
-  $('.slide_two .lt_right').click(function(event){
-  	event.preventDefault();
-  	var flag = $(this);
-  	flag.css('pointer-events', 'none');
+  // $('.slide_two .lt_right').click(function(event){
+  // 	event.preventDefault();
+  // 	var flag = $(this);
+  // 	flag.css('pointer-events', 'none');
 
-  	setTimeout(function () {
-        flag.css('pointer-events', 'unset');
-    }, 300);
-  	slide_left('slide_two');
-  });
+  // 	setTimeout(function () {
+  //       flag.css('pointer-events', 'unset');
+  //   }, 300);
+  // 	slide_left('slide_two');
+  // });
 /*=============================================================*/
-$('.slide_three .lt_left').click(function(event){
-  	event.preventDefault();
-  	var flag = $(this);
-  	flag.css('pointer-events', 'none');
-  	setTimeout(function () {
-        flag.css('pointer-events', 'unset');
-    }, 300);
-  	slide_right('slide_three');
-  });
+// $('.slide_three .lt_left').click(function(event){
+//   	event.preventDefault();
+//   	var flag = $(this);
+//   	flag.css('pointer-events', 'none');
+//   	setTimeout(function () {
+//         flag.css('pointer-events', 'unset');
+//     }, 300);
+//   	slide_right('slide_three');
+//   });
 
-  $('.slide_three .lt_right').click(function(event){
-  	event.preventDefault();
-  	var flag = $(this);
-  	flag.css('pointer-events', 'none');
+//   $('.slide_three .lt_right').click(function(event){
+//   	event.preventDefault();
+//   	var flag = $(this);
+//   	flag.css('pointer-events', 'none');
 
-  	setTimeout(function () {
-        flag.css('pointer-events', 'unset');
-    }, 300);
-  	slide_left('slide_three');
-  });
+//   	setTimeout(function () {
+//         flag.css('pointer-events', 'unset');
+//     }, 300);
+//   	slide_left('slide_three');
+//   });
 /*=============================================================*/
 
   $(window).resize(function(){

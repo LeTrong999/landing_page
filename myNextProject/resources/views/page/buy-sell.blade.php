@@ -8,7 +8,7 @@
                 <h1 class="">{{$items[0]->name_cate}}</h1>
             </div>
             <div class="content-body" style="">
-                <div class="icon-left-right slide_first">
+                <div class="icon-left-right slide_{{$items[0]->cate_id}}" flag_id="slide_{{$items[0]->cate_id}}">
                     <span class="lt_left">
                         <i class="fa fa-chevron-left" aria-hidden="true"></i>
                     </span>
@@ -16,20 +16,162 @@
                         <i class="fa fa-chevron-right" aria-hidden="true"></i>
                     </span>
                 </div>
-                <div style="display: flex; position: relative; z-index: 10; left: 0; transition: 0.5s" id="slide_first">
+                <div style="display: flex; position: relative; z-index: 10; left: 0; transition: 0.5s" id="slide_{{$items[0]->cate_id}}">
                 	
                 		@foreach($items as $item)
 	                    <div class="item">
 	                        <div class="content-box">
 	                            <img src="{{ url('public/uploads/'.$item->image) }}" class="img_width">
-	                            <div class="text-dec padding_lrb">
+	                            <div class="text-dec padding">
+	                                <span class="title_product">{{$item->name_product}}</span></br>
+	                                <span>
+	                                    {{$item->description}}
+	                                </span>
+	                            </div>
+	                            <div class="buy_product">
+	                            	<span style="float: left">
+	                            		300.000đ
+	                            	</span>
+	                            	<span style="float: right;" class="title_buy">
+	                            		Mua ngay
+	                            	</span>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <div class="item">
+	                        <div class="content-box">
+	                            <img src="{{ url('public/uploads/'.$item->image) }}" class="img_width">
+	                            <div class="text-dec padding">
+	                                <span class="title_product">{{$item->name_product}}</span></br>
+	                                <span>
+	                                    {{$item->description}}
+	                                </span>
+	                            </div>
+	                            <div class="buy_product">
+	                            	<span style="float: left">
+	                            		300.000đ
+	                            	</span>
+	                            	<span style="float: right;" class="title_buy">
+	                            		Mua ngay
+	                            	</span>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <div class="item">
+	                        <div class="content-box">
+	                            <img src="{{ url('public/uploads/'.$item->image) }}" class="img_width">
+	                            <div class="text-dec padding">
+	                                <span class="title_product">{{$item->name_product}}</span></br>
+	                                <span>
+	                                    {{$item->description}}
+	                                </span>
+	                            </div>
+	                            <div class="buy_product">
+	                            	<span style="float: left">
+	                            		300.000đ
+	                            	</span>
+	                            	<span style="float: right;" class="title_buy">
+	                            		Mua ngay
+	                            	</span>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <div class="item">
+	                        <div class="content-box">
+	                            <img src="{{ url('public/uploads/'.$item->image) }}" class="img_width">
+	                            <div class="text-dec padding">
+	                                <span class="title_product">{{$item->name_product}}</span></br>
+	                                <span>
+	                                    {{$item->description}}
+	                                </span>
+	                            </div>
+	                            <div class="buy_product">
+	                            	<span style="float: left">
+	                            		300.000đ
+	                            	</span>
+	                            	<span style="float: right;" class="title_buy">
+	                            		Mua ngay
+	                            	</span>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <div class="item">
+	                        <div class="content-box">
+	                            <img src="{{ url('public/uploads/'.$item->image) }}" class="img_width">
+	                            <div class="text-dec padding">
+	                                <span class="title_product">{{$item->name_product}}</span></br>
+	                                <span>
+	                                    {{$item->description}}
+	                                </span>
+	                            </div>
+	                            <div class="buy_product">
+	                            	<span style="float: left">
+	                            		300.000đ
+	                            	</span>
+	                            	<span style="float: right;" class="title_buy">
+	                            		Mua ngay
+	                            	</span>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <div class="item">
+	                        <div class="content-box">
+	                            <img src="{{ url('public/uploads/'.$item->image) }}" class="img_width">
+	                            <div class="text-dec padding">
+	                                <span class="title_product">{{$item->name_product}}</span></br>
+	                                <span>
+	                                    {{$item->description}}
+	                                </span>
+	                            </div>
+	                            <div class="buy_product">
+	                            	<span style="float: left">
+	                            		300.000đ
+	                            	</span>
+	                            	<span style="float: right;" class="title_buy">
+	                            		Mua ngay
+	                            	</span>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <div class="item">
+	                        <div class="content-box">
+	                            <img src="{{ url('public/uploads/'.$item->image) }}" class="img_width">
+	                            <div class="text-dec padding">
+	                                <span class="title_product">{{$item->name_product}}</span></br>
+	                                <span>
+	                                    {{$item->description}}
+	                                </span>
+	                            </div>
+	                            <div class="buy_product">
+	                            	<span style="float: left">
+	                            		300.000đ
+	                            	</span>
+	                            	<span style="float: right;" class="title_buy">
+	                            		Mua ngay
+	                            	</span>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <div class="item">
+	                        <div class="content-box">
+	                            <img src="{{ url('public/uploads/'.$item->image) }}" class="img_width">
+	                            <div class="text-dec padding">
 	                                <h3>{{$item->name_product}}</h3>
 	                                <span>
 	                                    {{$item->description}}
 	                                </span>
 	                            </div>
+	                            <div class="buy_product">
+	                            	<span style="float: left">
+	                            		300.000đ
+	                            	</span>
+	                            	<span style="float: right;" class="title_buy">
+	                            		Mua ngay
+	                            	</span>
+	                            </div>
 	                        </div>
 	                    </div>
+
                     	@endforeach()
                     
                 </div>
@@ -38,696 +180,6 @@
     </section>
     @endforeach()
     <div class="clearfix"></div>
-
-    <section class="content-first" style="display: block">
-        <div class="container">
-            <div class="content-top">
-                <h1 class="">HÃY ĐẾN VỚI DỊCH VỤ DU LỊCH CỦA CHÚNG TÔI</h1>
-            </div>
-            <div class="content-body" style="">
-                <div class="icon-left-right slide_two">
-                    <span class="lt_left">
-                        <i class="fa fa-chevron-left" aria-hidden="true"></i>
-                    </span>
-                    <span class="lt_right">
-                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                    </span>
-                </div>
-                <div style="display: flex; position: relative; z-index: 10; left: 0; transition: 0.5s" id="slide_two">
-                    <div class="item">
-                        <div class="content-box">
-                            <img src="http://localhost:8082/myNextProject/public/assets/images/b1.png" class="img_width">
-                            <div class="text-dec padding_lrb">
-                                <h3>Du lịch đảo Cô Tô</h3>
-                                <span>
-                                    Trải nghiệm thú vị, view đẹp, tận hưởng kì nghỉ thoải mái cùng người thân và bạn bè
-                                </span>
-                            </div>
-                            <div class="buy_product">
-                            	<span style="float: left">
-                            		300.000đ
-                            	</span>
-                            	<span style="float: right;" class="title_buy">
-                            		Mua ngay
-                            	</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-box">
-                            <img src="http://localhost:8082/myNextProject/public/assets/images/b2.png" class="img_width">
-                            <div class="text-dec padding_lrb">
-                                <h3>Du lịch Đà Nẵng</h3>
-                                <span>
-                                    Trải nghiệm thú vị, view đẹp, tận hưởng kì nghỉ thoải mái cùng người thân và bạn bè
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-box">
-                            <img src="http://localhost:8082/myNextProject/public/assets/images/b4.png" class="img_width">
-                            <div class="text-dec padding_lrb">
-                                <h3>Du lịch Hội An</h3>
-                                <span>
-                                    Trải nghiệm thú vị, view đẹp, tận hưởng kì nghỉ thoải mái cùng người thân và bạn bè
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-box">
-                            <img src="http://localhost:8082/myNextProject/public/assets/images/b6.png" class="img_width">
-                            <div class="text-dec padding_lrb">
-                                <h3>Du lịch Hội An</h3>
-                                <span>
-                                    Trải nghiệm thú vị, view đẹp, tận hưởng kì nghỉ thoải mái cùng người thân và bạn bè
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-box">
-                            <img src="http://localhost:8082/myNextProject/public/assets/images/b7.png" class="img_width">
-                            <div class="text-dec padding_lrb">
-                                <h3>Du lịch Hội An</h3>
-                                <span>
-                                    Trải nghiệm thú vị, view đẹp, tận hưởng kì nghỉ thoải mái cùng người thân và bạn bè
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-box">
-                            <img src="http://localhost:8082/myNextProject/public/assets/images/b8.png" class="img_width">
-                            <div class="text-dec padding_lrb">
-                                <h3>Du lịch Hội An</h3>
-                                <span>
-                                    Trải nghiệm thú vị, view đẹp, tận hưởng kì nghỉ thoải mái cùng người thân và bạn bè
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-box">
-                            <img src="http://localhost:8082/myNextProject/public/assets/images/b9.png" class="img_width">
-                            <div class="text-dec padding_lrb">
-                                <h3>Du lịch Hội An</h3>
-                                <span>
-                                    Trải nghiệm thú vị, view đẹp, tận hưởng kì nghỉ thoải mái cùng người thân và bạn bè
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-box">
-                            <img src="http://localhost:8082/myNextProject/public/assets/images/b10.png" class="img_width">
-                            <div class="text-dec padding_lrb">
-                                <h3>Du lịch Hội An</h3>
-                                <span>
-                                    Trải nghiệm thú vị, view đẹp, tận hưởng kì nghỉ thoải mái cùng người thân và bạn bè
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-box">
-                            <img src="http://localhost:8082/myNextProject/public/assets/images/b1.png" class="img_width">
-                            <div class="text-dec padding_lrb">
-                                <h3>Du lịch đảo Cô Tô</h3>
-                                <span>
-                                    Trải nghiệm thú vị, view đẹp, tận hưởng kì nghỉ thoải mái cùng người thân và bạn bè
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-box">
-                            <img src="http://localhost:8082/myNextProject/public/assets/images/b2.png" class="img_width">
-                            <div class="text-dec padding_lrb">
-                                <h3>Du lịch Đà Nẵng</h3>
-                                <span>
-                                    Trải nghiệm thú vị, view đẹp, tận hưởng kì nghỉ thoải mái cùng người thân và bạn bè
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-box">
-                            <img src="http://localhost:8082/myNextProject/public/assets/images/b4.png" class="img_width">
-                            <div class="text-dec padding_lrb">
-                                <h3>Du lịch Hội An</h3>
-                                <span>
-                                    Trải nghiệm thú vị, view đẹp, tận hưởng kì nghỉ thoải mái cùng người thân và bạn bè
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-box">
-                            <img src="http://localhost:8082/myNextProject/public/assets/images/b1.png" class="img_width">
-                            <div class="text-dec padding_lrb">
-                                <h3>Du lịch đảo Cô Tô</h3>
-                                <span>
-                                    Trải nghiệm thú vị, view đẹp, tận hưởng kì nghỉ thoải mái cùng người thân và bạn bè
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-box">
-                            <img src="http://localhost:8082/myNextProject/public/assets/images/b2.png" class="img_width">
-                            <div class="text-dec padding_lrb">
-                                <h3>Du lịch Đà Nẵng</h3>
-                                <span>
-                                    Trải nghiệm thú vị, view đẹp, tận hưởng kì nghỉ thoải mái cùng người thân và bạn bè
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-box">
-                            <img src="http://localhost:8082/myNextProject/public/assets/images/b4.png" class="img_width">
-                            <div class="text-dec padding_lrb">
-                                <h3>Du lịch Hội An</h3>
-                                <span>
-                                    Trải nghiệm thú vị, view đẹp, tận hưởng kì nghỉ thoải mái cùng người thân và bạn bè
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-box">
-                            <img src="http://localhost:8082/myNextProject/public/assets/images/b1.png" class="img_width">
-                            <div class="text-dec padding_lrb">
-                                <h3>Du lịch đảo Cô Tô</h3>
-                                <span>
-                                    Trải nghiệm thú vị, view đẹp, tận hưởng kì nghỉ thoải mái cùng người thân và bạn bè
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-box">
-                            <img src="http://localhost:8082/myNextProject/public/assets/images/b2.png" class="img_width">
-                            <div class="text-dec padding_lrb">
-                                <h3>Du lịch Đà Nẵng</h3>
-                                <span>
-                                    Trải nghiệm thú vị, view đẹp, tận hưởng kì nghỉ thoải mái cùng người thân và bạn bè
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-box">
-                            <img src="http://localhost:8082/myNextProject/public/assets/images/b4.png" class="img_width">
-                            <div class="text-dec padding_lrb">
-                                <h3>Du lịch Hội An</h3>
-                                <span>
-                                    Trải nghiệm thú vị, view đẹp, tận hưởng kì nghỉ thoải mái cùng người thân và bạn bè
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-box">
-                            <img src="http://localhost:8082/myNextProject/public/assets/images/b1.png" class="img_width">
-                            <div class="text-dec padding_lrb">
-                                <h3>Du lịch đảo Cô Tô</h3>
-                                <span>
-                                    Trải nghiệm thú vị, view đẹp, tận hưởng kì nghỉ thoải mái cùng người thân và bạn bè
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-box">
-                            <img src="http://localhost:8082/myNextProject/public/assets/images/b2.png" class="img_width">
-                            <div class="text-dec padding_lrb">
-                                <h3>Du lịch Đà Nẵng</h3>
-                                <span>
-                                    Trải nghiệm thú vị, view đẹp, tận hưởng kì nghỉ thoải mái cùng người thân và bạn bè
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-box">
-                            <img src="http://localhost:8082/myNextProject/public/assets/images/b4.png" class="img_width">
-                            <div class="text-dec padding_lrb">
-                                <h3>Du lịch Hội An</h3>
-                                <span>
-                                    Trải nghiệm thú vị, view đẹp, tận hưởng kì nghỉ thoải mái cùng người thân và bạn bè
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-box">
-                            <img src="http://localhost:8082/myNextProject/public/assets/images/b1.png" class="img_width">
-                            <div class="text-dec padding_lrb">
-                                <h3>Du lịch đảo Cô Tô</h3>
-                                <span>
-                                    Trải nghiệm thú vị, view đẹp, tận hưởng kì nghỉ thoải mái cùng người thân và bạn bè
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-box">
-                            <img src="http://localhost:8082/myNextProject/public/assets/images/b2.png" class="img_width">
-                            <div class="text-dec padding_lrb">
-                                <h3>Du lịch Đà Nẵng</h3>
-                                <span>
-                                    Trải nghiệm thú vị, view đẹp, tận hưởng kì nghỉ thoải mái cùng người thân và bạn bè
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-box">
-                            <img src="http://localhost:8082/myNextProject/public/assets/images/b4.png" class="img_width">
-                            <div class="text-dec padding_lrb">
-                                <h3>Du lịch Hội An</h3>
-                                <span>
-                                    Trải nghiệm thú vị, view đẹp, tận hưởng kì nghỉ thoải mái cùng người thân và bạn bè
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-box">
-                            <img src="http://localhost:8082/myNextProject/public/assets/images/b1.png" class="img_width">
-                            <div class="text-dec padding_lrb">
-                                <h3>Du lịch đảo Cô Tô</h3>
-                                <span>
-                                    Trải nghiệm thú vị, view đẹp, tận hưởng kì nghỉ thoải mái cùng người thân và bạn bè
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-box">
-                            <img src="http://localhost:8082/myNextProject/public/assets/images/b2.png" class="img_width">
-                            <div class="text-dec padding_lrb">
-                                <h3>Du lịch Đà Nẵng</h3>
-                                <span>
-                                    Trải nghiệm thú vị, view đẹp, tận hưởng kì nghỉ thoải mái cùng người thân và bạn bè
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-box">
-                            <img src="http://localhost:8082/myNextProject/public/assets/images/b4.png" class="img_width">
-                            <div class="text-dec padding_lrb">
-                                <h3>Du lịch Hội An</h3>
-                                <span>
-                                    Trải nghiệm thú vị, view đẹp, tận hưởng kì nghỉ thoải mái cùng người thân và bạn bè
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-box">
-                            <img src="http://localhost:8082/myNextProject/public/assets/images/b1.png" class="img_width">
-                            <div class="text-dec padding_lrb">
-                                <h3>Du lịch đảo Cô Tô</h3>
-                                <span>
-                                    Trải nghiệm thú vị, view đẹp, tận hưởng kì nghỉ thoải mái cùng người thân và bạn bè
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-box">
-                            <img src="http://localhost:8082/myNextProject/public/assets/images/b2.png" class="img_width">
-                            <div class="text-dec padding_lrb">
-                                <h3>Du lịch Đà Nẵng</h3>
-                                <span>
-                                    Trải nghiệm thú vị, view đẹp, tận hưởng kì nghỉ thoải mái cùng người thân và bạn bè
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-box">
-                            <img src="http://localhost:8082/myNextProject/public/assets/images/b4.png" class="img_width">
-                            <div class="text-dec padding_lrb">
-                                <h3>Du lịch Hội An</h3>
-                                <span>
-                                    Trải nghiệm thú vị, view đẹp, tận hưởng kì nghỉ thoải mái cùng người thân và bạn bè
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> 
-    </section>
-    <div class="clearfix"></div>
-
-
-    <section class="content-first" style="display: block">
-        <div class="container">
-            <div class="content-top">
-                <h1 class="">HÃY ĐẾN VỚI DỊCH VỤ DU LỊCH CỦA CHÚNG TÔI</h1>
-            </div>
-            <div class="content-body" style="">
-                <div class="icon-left-right slide_three">
-                    <span class="lt_left">
-                        <i class="fa fa-chevron-left" aria-hidden="true"></i>
-                    </span>
-                    <span class="lt_right">
-                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                    </span>
-                </div>
-                <div style="display: flex; position: relative; z-index: 10; left: 0; transition: 0.5s" id="slide_three">
-                    <div class="item">
-                        <div class="content-box">
-                            <img src="http://localhost:8082/myNextProject/public/assets/images/b1.png" class="img_width">
-                            <div class="text-dec padding_lrb">
-                                <h3>Du lịch đảo Cô Tô</h3>
-                                <span>
-                                    Trải nghiệm thú vị, view đẹp, tận hưởng kì nghỉ thoải mái cùng người thân và bạn bè
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-box">
-                            <img src="http://localhost:8082/myNextProject/public/assets/images/b2.png" class="img_width">
-                            <div class="text-dec padding_lrb">
-                                <h3>Du lịch Đà Nẵng</h3>
-                                <span>
-                                    Trải nghiệm thú vị, view đẹp, tận hưởng kì nghỉ thoải mái cùng người thân và bạn bè
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-box">
-                            <img src="http://localhost:8082/myNextProject/public/assets/images/b4.png" class="img_width">
-                            <div class="text-dec padding_lrb">
-                                <h3>Du lịch Hội An</h3>
-                                <span>
-                                    Trải nghiệm thú vị, view đẹp, tận hưởng kì nghỉ thoải mái cùng người thân và bạn bè
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-box">
-                            <img src="http://localhost:8082/myNextProject/public/assets/images/b6.png" class="img_width">
-                            <div class="text-dec padding_lrb">
-                                <h3>Du lịch Hội An</h3>
-                                <span>
-                                    Trải nghiệm thú vị, view đẹp, tận hưởng kì nghỉ thoải mái cùng người thân và bạn bè
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-box">
-                            <img src="http://localhost:8082/myNextProject/public/assets/images/b7.png" class="img_width">
-                            <div class="text-dec padding_lrb">
-                                <h3>Du lịch Hội An</h3>
-                                <span>
-                                    Trải nghiệm thú vị, view đẹp, tận hưởng kì nghỉ thoải mái cùng người thân và bạn bè
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-box">
-                            <img src="http://localhost:8082/myNextProject/public/assets/images/b8.png" class="img_width">
-                            <div class="text-dec padding_lrb">
-                                <h3>Du lịch Hội An</h3>
-                                <span>
-                                    Trải nghiệm thú vị, view đẹp, tận hưởng kì nghỉ thoải mái cùng người thân và bạn bè
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-box">
-                            <img src="http://localhost:8082/myNextProject/public/assets/images/b9.png" class="img_width">
-                            <div class="text-dec padding_lrb">
-                                <h3>Du lịch Hội An</h3>
-                                <span>
-                                    Trải nghiệm thú vị, view đẹp, tận hưởng kì nghỉ thoải mái cùng người thân và bạn bè
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-box">
-                            <img src="http://localhost:8082/myNextProject/public/assets/images/b10.png" class="img_width">
-                            <div class="text-dec padding_lrb">
-                                <h3>Du lịch Hội An</h3>
-                                <span>
-                                    Trải nghiệm thú vị, view đẹp, tận hưởng kì nghỉ thoải mái cùng người thân và bạn bè
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-box">
-                            <img src="http://localhost:8082/myNextProject/public/assets/images/b1.png" class="img_width">
-                            <div class="text-dec padding_lrb">
-                                <h3>Du lịch đảo Cô Tô</h3>
-                                <span>
-                                    Trải nghiệm thú vị, view đẹp, tận hưởng kì nghỉ thoải mái cùng người thân và bạn bè
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-box">
-                            <img src="http://localhost:8082/myNextProject/public/assets/images/b2.png" class="img_width">
-                            <div class="text-dec padding_lrb">
-                                <h3>Du lịch Đà Nẵng</h3>
-                                <span>
-                                    Trải nghiệm thú vị, view đẹp, tận hưởng kì nghỉ thoải mái cùng người thân và bạn bè
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-box">
-                            <img src="http://localhost:8082/myNextProject/public/assets/images/b4.png" class="img_width">
-                            <div class="text-dec padding_lrb">
-                                <h3>Du lịch Hội An</h3>
-                                <span>
-                                    Trải nghiệm thú vị, view đẹp, tận hưởng kì nghỉ thoải mái cùng người thân và bạn bè
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-box">
-                            <img src="http://localhost:8082/myNextProject/public/assets/images/b1.png" class="img_width">
-                            <div class="text-dec padding_lrb">
-                                <h3>Du lịch đảo Cô Tô</h3>
-                                <span>
-                                    Trải nghiệm thú vị, view đẹp, tận hưởng kì nghỉ thoải mái cùng người thân và bạn bè
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-box">
-                            <img src="http://localhost:8082/myNextProject/public/assets/images/b2.png" class="img_width">
-                            <div class="text-dec padding_lrb">
-                                <h3>Du lịch Đà Nẵng</h3>
-                                <span>
-                                    Trải nghiệm thú vị, view đẹp, tận hưởng kì nghỉ thoải mái cùng người thân và bạn bè
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-box">
-                            <img src="http://localhost:8082/myNextProject/public/assets/images/b4.png" class="img_width">
-                            <div class="text-dec padding_lrb">
-                                <h3>Du lịch Hội An</h3>
-                                <span>
-                                    Trải nghiệm thú vị, view đẹp, tận hưởng kì nghỉ thoải mái cùng người thân và bạn bè
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-box">
-                            <img src="http://localhost:8082/myNextProject/public/assets/images/b1.png" class="img_width">
-                            <div class="text-dec padding_lrb">
-                                <h3>Du lịch đảo Cô Tô</h3>
-                                <span>
-                                    Trải nghiệm thú vị, view đẹp, tận hưởng kì nghỉ thoải mái cùng người thân và bạn bè
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-box">
-                            <img src="http://localhost:8082/myNextProject/public/assets/images/b2.png" class="img_width">
-                            <div class="text-dec padding_lrb">
-                                <h3>Du lịch Đà Nẵng</h3>
-                                <span>
-                                    Trải nghiệm thú vị, view đẹp, tận hưởng kì nghỉ thoải mái cùng người thân và bạn bè
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-box">
-                            <img src="http://localhost:8082/myNextProject/public/assets/images/b4.png" class="img_width">
-                            <div class="text-dec padding_lrb">
-                                <h3>Du lịch Hội An</h3>
-                                <span>
-                                    Trải nghiệm thú vị, view đẹp, tận hưởng kì nghỉ thoải mái cùng người thân và bạn bè
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-box">
-                            <img src="http://localhost:8082/myNextProject/public/assets/images/b1.png" class="img_width">
-                            <div class="text-dec padding_lrb">
-                                <h3>Du lịch đảo Cô Tô</h3>
-                                <span>
-                                    Trải nghiệm thú vị, view đẹp, tận hưởng kì nghỉ thoải mái cùng người thân và bạn bè
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-box">
-                            <img src="http://localhost:8082/myNextProject/public/assets/images/b2.png" class="img_width">
-                            <div class="text-dec padding_lrb">
-                                <h3>Du lịch Đà Nẵng</h3>
-                                <span>
-                                    Trải nghiệm thú vị, view đẹp, tận hưởng kì nghỉ thoải mái cùng người thân và bạn bè
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-box">
-                            <img src="http://localhost:8082/myNextProject/public/assets/images/b4.png" class="img_width">
-                            <div class="text-dec padding_lrb">
-                                <h3>Du lịch Hội An</h3>
-                                <span>
-                                    Trải nghiệm thú vị, view đẹp, tận hưởng kì nghỉ thoải mái cùng người thân và bạn bè
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-box">
-                            <img src="http://localhost:8082/myNextProject/public/assets/images/b1.png" class="img_width">
-                            <div class="text-dec padding_lrb">
-                                <h3>Du lịch đảo Cô Tô</h3>
-                                <span>
-                                    Trải nghiệm thú vị, view đẹp, tận hưởng kì nghỉ thoải mái cùng người thân và bạn bè
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-box">
-                            <img src="http://localhost:8082/myNextProject/public/assets/images/b2.png" class="img_width">
-                            <div class="text-dec padding_lrb">
-                                <h3>Du lịch Đà Nẵng</h3>
-                                <span>
-                                    Trải nghiệm thú vị, view đẹp, tận hưởng kì nghỉ thoải mái cùng người thân và bạn bè
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-box">
-                            <img src="http://localhost:8082/myNextProject/public/assets/images/b4.png" class="img_width">
-                            <div class="text-dec padding_lrb">
-                                <h3>Du lịch Hội An</h3>
-                                <span>
-                                    Trải nghiệm thú vị, view đẹp, tận hưởng kì nghỉ thoải mái cùng người thân và bạn bè
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-box">
-                            <img src="http://localhost:8082/myNextProject/public/assets/images/b1.png" class="img_width">
-                            <div class="text-dec padding_lrb">
-                                <h3>Du lịch đảo Cô Tô</h3>
-                                <span>
-                                    Trải nghiệm thú vị, view đẹp, tận hưởng kì nghỉ thoải mái cùng người thân và bạn bè
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-box">
-                            <img src="http://localhost:8082/myNextProject/public/assets/images/b2.png" class="img_width">
-                            <div class="text-dec padding_lrb">
-                                <h3>Du lịch Đà Nẵng</h3>
-                                <span>
-                                    Trải nghiệm thú vị, view đẹp, tận hưởng kì nghỉ thoải mái cùng người thân và bạn bè
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-box">
-                            <img src="http://localhost:8082/myNextProject/public/assets/images/b4.png" class="img_width">
-                            <div class="text-dec padding_lrb">
-                                <h3>Du lịch Hội An</h3>
-                                <span>
-                                    Trải nghiệm thú vị, view đẹp, tận hưởng kì nghỉ thoải mái cùng người thân và bạn bè
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-box">
-                            <img src="http://localhost:8082/myNextProject/public/assets/images/b1.png" class="img_width">
-                            <div class="text-dec padding_lrb">
-                                <h3>Du lịch đảo Cô Tô</h3>
-                                <span>
-                                    Trải nghiệm thú vị, view đẹp, tận hưởng kì nghỉ thoải mái cùng người thân và bạn bè
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-box">
-                            <img src="http://localhost:8082/myNextProject/public/assets/images/b2.png" class="img_width">
-                            <div class="text-dec padding_lrb">
-                                <h3>Du lịch Đà Nẵng</h3>
-                                <span>
-                                    Trải nghiệm thú vị, view đẹp, tận hưởng kì nghỉ thoải mái cùng người thân và bạn bè
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content-box">
-                            <img src="http://localhost:8082/myNextProject/public/assets/images/b4.png" class="img_width">
-                            <div class="text-dec padding_lrb">
-                                <h3>Du lịch Hội An</h3>
-                                <span>
-                                    Trải nghiệm thú vị, view đẹp, tận hưởng kì nghỉ thoải mái cùng người thân và bạn bè
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <div class="clearfix"></div>
-
 
     <section class="contact-content">
             <div class="row">
