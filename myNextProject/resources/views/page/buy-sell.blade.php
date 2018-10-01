@@ -22,17 +22,14 @@
 	                    <div class="item">
 	                        <div class="content-box">
 	                            <img src="{{ url('public/uploads/'.$item->image) }}" class="img_width">
-	                            <div class="text-dec padding">
+	                            <div class="text-dec padding_lr dec_product">
 	                                <span class="title_product">{{$item->name_product}}</span></br>
-	                                <span>
-	                                    {{$item->description}}
-	                                </span>
 	                            </div>
-	                            <div class="buy_product">
+	                            <div class="buy_product padding_lr">
 	                            	<span style="float: left">
 	                            		300.000đ
 	                            	</span>
-	                            	<span style="float: right;" class="title_buy">
+	                            	<span style="float: right;" class="btn btn-danger title_buy">
 	                            		Mua ngay
 	                            	</span>
 	                            </div>
@@ -41,17 +38,14 @@
 	                    <div class="item">
 	                        <div class="content-box">
 	                            <img src="{{ url('public/uploads/'.$item->image) }}" class="img_width">
-	                            <div class="text-dec padding">
+	                            <div class="text-dec padding_lr dec_product">
 	                                <span class="title_product">{{$item->name_product}}</span></br>
-	                                <span>
-	                                    {{$item->description}}
-	                                </span>
 	                            </div>
-	                            <div class="buy_product">
+	                            <div class="buy_product padding_lr">
 	                            	<span style="float: left">
 	                            		300.000đ
 	                            	</span>
-	                            	<span style="float: right;" class="title_buy">
+	                            	<span style="float: right;" class="btn btn-danger title_buy">
 	                            		Mua ngay
 	                            	</span>
 	                            </div>
@@ -60,17 +54,14 @@
 	                    <div class="item">
 	                        <div class="content-box">
 	                            <img src="{{ url('public/uploads/'.$item->image) }}" class="img_width">
-	                            <div class="text-dec padding">
+	                            <div class="text-dec padding_lr dec_product">
 	                                <span class="title_product">{{$item->name_product}}</span></br>
-	                                <span>
-	                                    {{$item->description}}
-	                                </span>
 	                            </div>
-	                            <div class="buy_product">
+	                            <div class="buy_product padding_lr">
 	                            	<span style="float: left">
 	                            		300.000đ
 	                            	</span>
-	                            	<span style="float: right;" class="title_buy">
+	                            	<span style="float: right;" class="btn btn-danger title_buy">
 	                            		Mua ngay
 	                            	</span>
 	                            </div>
@@ -79,17 +70,14 @@
 	                    <div class="item">
 	                        <div class="content-box">
 	                            <img src="{{ url('public/uploads/'.$item->image) }}" class="img_width">
-	                            <div class="text-dec padding">
+	                            <div class="text-dec padding_lr dec_product">
 	                                <span class="title_product">{{$item->name_product}}</span></br>
-	                                <span>
-	                                    {{$item->description}}
-	                                </span>
 	                            </div>
-	                            <div class="buy_product">
+	                            <div class="buy_product padding_lr">
 	                            	<span style="float: left">
 	                            		300.000đ
 	                            	</span>
-	                            	<span style="float: right;" class="title_buy">
+	                            	<span style="float: right;" class="btn btn-danger title_buy">
 	                            		Mua ngay
 	                            	</span>
 	                            </div>
@@ -98,17 +86,14 @@
 	                    <div class="item">
 	                        <div class="content-box">
 	                            <img src="{{ url('public/uploads/'.$item->image) }}" class="img_width">
-	                            <div class="text-dec padding">
+	                            <div class="text-dec padding_lr dec_product">
 	                                <span class="title_product">{{$item->name_product}}</span></br>
-	                                <span>
-	                                    {{$item->description}}
-	                                </span>
 	                            </div>
-	                            <div class="buy_product">
+	                            <div class="buy_product padding_lr">
 	                            	<span style="float: left">
 	                            		300.000đ
 	                            	</span>
-	                            	<span style="float: right;" class="title_buy">
+	                            	<span style="float: right;" class="btn btn-danger title_buy">
 	                            		Mua ngay
 	                            	</span>
 	                            </div>
@@ -117,17 +102,14 @@
 	                    <div class="item">
 	                        <div class="content-box">
 	                            <img src="{{ url('public/uploads/'.$item->image) }}" class="img_width">
-	                            <div class="text-dec padding">
+	                            <div class="text-dec padding_lr dec_product">
 	                                <span class="title_product">{{$item->name_product}}</span></br>
-	                                <span>
-	                                    {{$item->description}}
-	                                </span>
 	                            </div>
-	                            <div class="buy_product">
+	                            <div class="buy_product padding_lr">
 	                            	<span style="float: left">
 	                            		300.000đ
 	                            	</span>
-	                            	<span style="float: right;" class="title_buy">
+	                            	<span style="float: right;" class="btn btn-danger title_buy">
 	                            		Mua ngay
 	                            	</span>
 	                            </div>
@@ -136,17 +118,14 @@
 	                    <div class="item">
 	                        <div class="content-box">
 	                            <img src="{{ url('public/uploads/'.$item->image) }}" class="img_width">
-	                            <div class="text-dec padding">
+	                            <div class="text-dec padding_lr dec_product">
 	                                <span class="title_product">{{$item->name_product}}</span></br>
-	                                <span>
-	                                    {{$item->description}}
-	                                </span>
 	                            </div>
-	                            <div class="buy_product">
+	                            <div class="buy_product padding_lr">
 	                            	<span style="float: left">
 	                            		300.000đ
 	                            	</span>
-	                            	<span style="float: right;" class="title_buy">
+	                            	<span style="float: right;" class="btn btn-danger title_buy">
 	                            		Mua ngay
 	                            	</span>
 	                            </div>
@@ -155,22 +134,36 @@
 	                    <div class="item">
 	                        <div class="content-box">
 	                            <img src="{{ url('public/uploads/'.$item->image) }}" class="img_width">
-	                            <div class="text-dec padding">
-	                                <h3>{{$item->name_product}}</h3>
-	                                <span>
-	                                    {{$item->description}}
-	                                </span>
+	                            <div class="text-dec padding_lr dec_product">
+	                                <span class="title_product">{{$item->name_product}}</span></br>
 	                            </div>
-	                            <div class="buy_product">
+	                            <div class="buy_product padding_lr">
 	                            	<span style="float: left">
 	                            		300.000đ
 	                            	</span>
-	                            	<span style="float: right;" class="title_buy">
+	                            	<span style="float: right;" class="btn btn-danger title_buy">
 	                            		Mua ngay
 	                            	</span>
 	                            </div>
 	                        </div>
 	                    </div>
+	                    <div class="item">
+	                        <div class="content-box">
+	                            <img src="{{ url('public/uploads/'.$item->image) }}" class="img_width">
+	                            <div class="text-dec padding_lr dec_product">
+	                                <span class="title_product">{{$item->name_product}}</span></br>
+	                            </div>
+	                            <div class="buy_product padding_lr">
+	                            	<span style="float: left">
+	                            		300.000đ
+	                            	</span>
+	                            	<span style="float: right;" class="btn btn-danger title_buy">
+	                            		Mua ngay
+	                            	</span>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    
 
                     	@endforeach()
                     
@@ -185,7 +178,7 @@
             <div class="row">
                 <div class="container">
                     <div class="top">
-                        <h1>Liên hệ với chúng tôi</h1>
+                        <h1>Liên hệ</h1>
                     </div>
                     <div class="body">
                         <div class="col-md-9 no-padding">

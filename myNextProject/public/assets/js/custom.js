@@ -22,49 +22,6 @@ jQuery(document).ready(function($) {
     }, 300);
   	slide_left(flag_slide);
   });
- /*=============================================================*/
-  // $('.slide_two .lt_left').click(function(event){
-  // 	event.preventDefault();
-  // 	var flag = $(this);
-  // 	flag.css('pointer-events', 'none');
-  // 	setTimeout(function () {
-  //       flag.css('pointer-events', 'unset');
-  //   }, 300);
-  // 	slide_right('slide_two');
-  // });
-
-  // $('.slide_two .lt_right').click(function(event){
-  // 	event.preventDefault();
-  // 	var flag = $(this);
-  // 	flag.css('pointer-events', 'none');
-
-  // 	setTimeout(function () {
-  //       flag.css('pointer-events', 'unset');
-  //   }, 300);
-  // 	slide_left('slide_two');
-  // });
-/*=============================================================*/
-// $('.slide_three .lt_left').click(function(event){
-//   	event.preventDefault();
-//   	var flag = $(this);
-//   	flag.css('pointer-events', 'none');
-//   	setTimeout(function () {
-//         flag.css('pointer-events', 'unset');
-//     }, 300);
-//   	slide_right('slide_three');
-//   });
-
-//   $('.slide_three .lt_right').click(function(event){
-//   	event.preventDefault();
-//   	var flag = $(this);
-//   	flag.css('pointer-events', 'none');
-
-//   	setTimeout(function () {
-//         flag.css('pointer-events', 'unset');
-//     }, 300);
-//   	slide_left('slide_three');
-//   });
-/*=============================================================*/
 
   $(window).resize(function(){
 	 $('#slide_first,#slide_two,#slide_three').css('left','0');
@@ -72,7 +29,7 @@ jQuery(document).ready(function($) {
   });
 });
 function slide_left(id){
-	$('.'+id+' .lt_left').css('display','block')
+	$('.'+id+' .lt_left').css('display','inline')
 	var item = $('#'+id+" > div");
 	var big_width = $('#'+id).outerWidth();
 	var width_item = item.outerWidth(true);
@@ -90,7 +47,7 @@ function slide_left(id){
 }
 
 function slide_right(id){
-	$('.'+id+' .lt_right').css('display','block')
+	$('.'+id+' .lt_right').css('display','inline')
 	var item = $('#'+id+" > div");
 	var big_width = $('#'+id).outerWidth();
 	var width_item = item.outerWidth(true);
