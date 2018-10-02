@@ -163,6 +163,118 @@
 	                            </div>
 	                        </div>
 	                    </div>
+	                    <div class="item">
+	                        <div class="content-box">
+	                            <img src="{{ url('public/uploads/'.$item->image) }}" class="img_width">
+	                            <div class="text-dec padding_lr dec_product">
+	                                <span class="title_product">{{$item->name_product}}</span></br>
+	                            </div>
+	                            <div class="buy_product padding_lr">
+	                            	<span style="float: left">
+	                            		300.000đ
+	                            	</span>
+	                            	<span style="float: right;" class="btn btn-danger title_buy">
+	                            		Mua ngay
+	                            	</span>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <div class="item">
+	                        <div class="content-box">
+	                            <img src="{{ url('public/uploads/'.$item->image) }}" class="img_width">
+	                            <div class="text-dec padding_lr dec_product">
+	                                <span class="title_product">{{$item->name_product}}</span></br>
+	                            </div>
+	                            <div class="buy_product padding_lr">
+	                            	<span style="float: left">
+	                            		300.000đ
+	                            	</span>
+	                            	<span style="float: right;" class="btn btn-danger title_buy">
+	                            		Mua ngay
+	                            	</span>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <div class="item">
+	                        <div class="content-box">
+	                            <img src="{{ url('public/uploads/'.$item->image) }}" class="img_width">
+	                            <div class="text-dec padding_lr dec_product">
+	                                <span class="title_product">{{$item->name_product}}</span></br>
+	                            </div>
+	                            <div class="buy_product padding_lr">
+	                            	<span style="float: left">
+	                            		300.000đ
+	                            	</span>
+	                            	<span style="float: right;" class="btn btn-danger title_buy">
+	                            		Mua ngay
+	                            	</span>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <div class="item">
+	                        <div class="content-box">
+	                            <img src="{{ url('public/uploads/'.$item->image) }}" class="img_width">
+	                            <div class="text-dec padding_lr dec_product">
+	                                <span class="title_product">{{$item->name_product}}</span></br>
+	                            </div>
+	                            <div class="buy_product padding_lr">
+	                            	<span style="float: left">
+	                            		300.000đ
+	                            	</span>
+	                            	<span style="float: right;" class="btn btn-danger title_buy">
+	                            		Mua ngay
+	                            	</span>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <div class="item">
+	                        <div class="content-box">
+	                            <img src="{{ url('public/uploads/'.$item->image) }}" class="img_width">
+	                            <div class="text-dec padding_lr dec_product">
+	                                <span class="title_product">{{$item->name_product}}</span></br>
+	                            </div>
+	                            <div class="buy_product padding_lr">
+	                            	<span style="float: left">
+	                            		300.000đ
+	                            	</span>
+	                            	<span style="float: right;" class="btn btn-danger title_buy">
+	                            		Mua ngay
+	                            	</span>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <div class="item">
+	                        <div class="content-box">
+	                            <img src="{{ url('public/uploads/'.$item->image) }}" class="img_width">
+	                            <div class="text-dec padding_lr dec_product">
+	                                <span class="title_product">{{$item->name_product}}</span></br>
+	                            </div>
+	                            <div class="buy_product padding_lr">
+	                            	<span style="float: left">
+	                            		300.000đ
+	                            	</span>
+	                            	<span style="float: right;" class="btn btn-danger title_buy">
+	                            		Mua ngay
+	                            	</span>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <div class="item">
+	                        <div class="content-box">
+	                            <img src="{{ url('public/uploads/'.$item->image) }}" class="img_width">
+	                            <div class="text-dec padding_lr dec_product">
+	                                <span class="title_product">{{$item->name_product}}</span></br>
+	                            </div>
+	                            <div class="buy_product padding_lr">
+	                            	<span style="float: left">
+	                            		300.000đ
+	                            	</span>
+	                            	<span style="float: right;" class="btn btn-danger title_buy">
+	                            		Mua ngay
+	                            	</span>
+	                            </div>
+	                        </div>
+	                    </div>
 	                    
 
                     	@endforeach()

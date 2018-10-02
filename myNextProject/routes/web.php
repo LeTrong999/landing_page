@@ -20,3 +20,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/buy-sell/{link}',['as'=>'main','uses'=>'MainController@index']);
+Route::get('/signup', function(){
+	return view('page/signup');
+});
+Route::get('/login', function(){
+	return view('page/login');
+});
