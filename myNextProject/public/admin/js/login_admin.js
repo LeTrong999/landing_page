@@ -1,22 +1,22 @@
 jQuery(document).ready(function($) {
-    // $('#btn_submit_login').click(function(event){
-    // event.preventDefault();
-    // var email = $('input[name=txt_email]').val();
-    // var password = $('input[name=txt_password]').val();
-    // var data = {email:email,password:password};
-    // console.log(data);
-    // $.ajax({
-    //     url: 'http://localhost:8082/myNextProject/api/auth/login',
-    //     type: 'POST',
-    //     data: data,
-    //     success: function(data){
-    //         console.log(data);
-    //     },
-    //     error:  function(jqXHR,status, errorThrown){
-	   //              my_error(jqXHR.status);
-	   //          }
-    //     });
-    // });
+    $('#btn_submit_login').click(function(event){
+    event.preventDefault();
+    var email = $('input[name=txt_email]').val();
+    var password = $('input[name=txt_password]').val();
+    var data = {email:email,password:password};
+    console.log(data);
+    $.ajax({
+        url: 'http://localhost:8082/myNextProject/api/auth/login',
+        type: 'POST',
+        data: data,
+        success: function(data){
+            console.log(data);
+        },
+        error:  function(jqXHR,status, errorThrown){
+	                my_error(jqXHR.status);
+	            }
+        });
+    });
 
 });
 

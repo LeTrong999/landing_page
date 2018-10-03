@@ -30,20 +30,19 @@
 <body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
-    <a href=""><b>Member</b>LTE</a>
+    <a href="../../index2.html"><b>Admin</b>LTE</a>
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
     <p class="login-box-msg">Sign in to start your session</p>
 
-    <form action="http://localhost:8082/myNextProject/user/login" method="post">
-      {!! csrf_field() !!}
+    <form action="../../index2.html" method="post">
       <div class="form-group has-feedback">
-        <input type="text" class="form-control" name="email" placeholder="Email">
+        <input type="email" class="form-control" name="txt_email" placeholder="Email">
         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
-        <input type="password" class="form-control" name="password" placeholder="Password">
+        <input type="password" class="form-control" name="txt_password" placeholder="Password">
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
       <div class="row">
@@ -71,7 +70,7 @@
 <script src="{{ url('public/admin/bower_components/bootstrap/dist/js/bootstrap.min.js') }}"></script>
 <!-- iCheck -->
 <script src="{{ url('public/admin/iCheck/icheck.min.js') }}"></script>
-<script src="{{ url('public/admin/js/login.js') }}"></script>
+<script src="{{ url('public/admin/js/login_admin.js') }}"></script>
 <script>
   $(function () {
     $('input').iCheck({
