@@ -17,7 +17,11 @@ class User extends Authenticatable implements JWTSubject
      * @var array
      */
     protected $fillable = [
+<<<<<<< Updated upstream
         'name', 'email', 'password', 'link'
+=======
+        'name', 'email', 'password','link'
+>>>>>>> Stashed changes
     ];
 
     /**

@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
     "content-hash": "7eefaa598da98e955d12302c8b5b48dc",
@@ -1984,6 +1984,7 @@
                 "uuid"
             ],
             "time": "2018-07-19T23:38:55+00:00"
+<<<<<<< Updated upstream
         },
         {
             "name": "spatie/laravel-permission",
@@ -2048,6 +2049,8 @@
                 "spatie"
             ],
             "time": "2018-09-29T04:20:17+00:00"
+=======
+>>>>>>> Stashed changes
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -3527,6 +3530,7 @@
         },
         {
             "name": "mockery/mockery",
+<<<<<<< Updated upstream
             "version": "1.2.0",
             "source": {
                 "type": "git",
@@ -3537,6 +3541,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/mockery/mockery/zipball/100633629bf76d57430b86b7098cd6beb996a35a",
                 "reference": "100633629bf76d57430b86b7098cd6beb996a35a",
+=======
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mockery/mockery.git",
+                "reference": "99e29d3596b16dabe4982548527d5ddf90232e99"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mockery/mockery/zipball/99e29d3596b16dabe4982548527d5ddf90232e99",
+                "reference": "99e29d3596b16dabe4982548527d5ddf90232e99",
+>>>>>>> Stashed changes
                 "shasum": ""
             },
             "require": {
@@ -3545,7 +3561,12 @@
                 "php": ">=5.6.0"
             },
             "require-dev": {
+<<<<<<< Updated upstream
                 "phpunit/phpunit": "~5.7.10|~6.5|~7.0"
+=======
+                "phpdocumentor/phpdocumentor": "^2.9",
+                "phpunit/phpunit": "~5.7.10|~6.5"
+>>>>>>> Stashed changes
             },
             "type": "library",
             "extra": {
@@ -3588,7 +3609,11 @@
                 "test double",
                 "testing"
             ],
+<<<<<<< Updated upstream
             "time": "2018-10-02T21:52:37+00:00"
+=======
+            "time": "2018-05-08T08:54:48+00:00"
+>>>>>>> Stashed changes
         },
         {
             "name": "myclabs/deep-copy",
